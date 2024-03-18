@@ -1,5 +1,5 @@
 import "./Catalog.css";
-import Product from "./Product";
+import Product from "../components/Product";
 
 function Catalog() {
   const data = [
@@ -7,7 +7,7 @@ function Catalog() {
       title: "Subscription",
       price: 19.99,
       category: "Monthly",
-      image: "img1.jpg",
+      image: "",
       _id: "1",
     },
     {

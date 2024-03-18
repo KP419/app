@@ -3,21 +3,18 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Catalog from "./pages/Catalog";
-import QuantityPicker from "./pages/QuantityPicker";
+import QuantityPicker from "./components/QuantityPicker";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
 
-      <Catalog/>
+      <Catalog />
 
       <Footer />
-
     </div>
   );
 }
 
 export default App;
-
-
