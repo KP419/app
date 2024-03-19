@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-left">
           <h3>Looney Farms</h3>
-          <p>A brief description of your company.</p>
+          <p>Looney Farms is a family-owned organic farm committed to sustainable agriculture. We cultivate a wide variety of fruits and vegetables using eco-friendly farming methods, ensuring our produce is bursting with natural flavors and free from harmful chemicals. Experience the taste of nature's bounty at its finest by visiting our farm stand or joining our seasonal farm tours.</p>
         </div>
         <div className="footer-right">
           <h3>Quick Links</h3>
@@ -18,7 +18,7 @@ function Footer() {
           </ul>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Company Name. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Looney Farms. All rights reserved.</p>
         </div>
       </div>
     </footer>
