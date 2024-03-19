@@ -4,34 +4,39 @@ import Product from "../components/Product";
 function Catalog() {
   const data = [
     {
-      title: "Subscription",
-      price: 19.99,
-      category: "Monthly",
-      image: "",
+      title: "Strawberry",
+      price: 1.99,
+      category: "fresh fruit",
+      image: "strawberry.jpg",
       _id: "1",
     },
     {
-      title: "W",
-      price: 19.99,
-      category: "I will help you start",
-      image: "img1.jpg",
+      title: "banana ",
+      price: 1.99,
+      category: "fresh fruit",
+      image: "banana.jpg",
       _id: "2",
     },
     {
-      title: "Teach you how to find animals",
-      price: 19.99,
-      category: "I can build your studio",
-      image: "img1.jpg",
+      title: "grapes",
+      price: 2.99,
+      category: "fresh fruit",
+      image: "grape.jpg",
+      _id: "3",
+    },
+    {
+      title: "eggs",
+      price: 2.99,
+      category: "by the dozen",
+      image: 'egg.jpg',
       _id: "3",
     },
   ];
 
   return (
     <div className="catalog page">
-      <h1>My Catalog</h1>
-      <Product info={data[0]} />
-      <Product info={data[1]} />
-      <Product info={data[2]} />
+      <h1>Looney Farms</h1>
+      {data.map(prod => <Product key={prod._id} info={prod} />)}
     </div>
   );
 }

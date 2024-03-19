@@ -1,11 +1,27 @@
-import "./Footer.css";
+import './Footer.css';
 
 function Footer() {
   return (
-    <div className="footer">
-      <h2>This is my Footer</h2>
-      <p>By Kory Plotts</p>
-    </div>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-left">
+          <h3>Company Name</h3>
+          <p>A brief description of your company.</p>
+        </div>
+        <div className="footer-right">
+          <h3>Quick Links</h3>
+          <ul className="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} Company Name. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   );
 }
 

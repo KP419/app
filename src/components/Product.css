@@ -5,7 +5,7 @@
 
     display: inline-block;
     width: 300px;
-    height: 340px;
+    height: 400px;
     border-radius: 3px;
     margin: 0 7px 12px 0;
     vertical-align: top;
@@ -15,4 +15,8 @@
     font-size: 22px;
     font-family: monospace;
     margin: 0;
+}
+
+.product img{
+    width: 260px;
 }
