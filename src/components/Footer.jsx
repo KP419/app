@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <h3>Company Name</h3>
+          <h3>Looney Farms</h3>
           <p>A brief description of your company.</p>
         </div>
         <div className="footer-right">

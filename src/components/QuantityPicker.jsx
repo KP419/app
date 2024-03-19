@@ -18,9 +18,17 @@ function QuantityPicker() {
 
   return (
     <div className="quantityPicker">
-      <button className="btn btn-outline-light" disabled={quantity == 1 } onClick={decrease}>-</button>
-      <label>{quantity}</label>
-      <button className="btn btn-outline-light" onClick={increase}>+</button>
+      <button
+        className="btn btn-outline-dark"
+        disabled={quantity === 1}
+        onClick={decrease}
+      >
+        -
+      </button>
+      <label className="quantity-label">{quantity}</label>
+      <button className="btn btn-outline-dark" onClick={increase}>
+        +
+      </button>
     </div>
   );
 }
