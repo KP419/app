@@ -2,7 +2,7 @@ import "./Navbar.css";
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg"data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#"></a>
         <button
