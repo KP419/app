@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import './QuantityPicker.css';
+import { useState } from "react";
+import "./QuantityPicker.css";
 
 function QuantityPicker() {
   const [quantity, setQuantity] = useState(1);

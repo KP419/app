@@ -45,3 +45,30 @@
     color: #000;
     text-align: right;
 }
+
+/* Media queries */
+
+/* Smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    .product {
+        width: 100%;
+        height: auto;
+        margin: 0 0 20px 0;
+    }
+}
+
+/* Tablets (between 768px and 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .product {
+        width: calc(50% - 20px);
+        margin: 0 20px 20px 0;
+    }
+}
+
+/* Larger screens (above 992px) */
+@media (min-width: 992px) {
+    .product {
+        width: calc(33.33% - 20px);
+        margin: 0 20px 20px 0;
+    }
+}

@@ -96,3 +96,32 @@
 .btn-outline-success:hover {
   background-color: #e0a800;
 }
+
+/* Media queries */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link::before {
+    bottom: 0;
+    height: 1px;
+  }
+
+  .navbar-nav .dropdown-menu {
+    margin-top: 0;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .navbar-nav .dropdown-item {
+    text-align: center;
+  }
+
+  .form-control,
+  .btn-outline-success {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}
