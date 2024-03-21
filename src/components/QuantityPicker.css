@@ -16,7 +16,6 @@
     margin: 0 1rem;
 }
 
-/* Media query for screens smaller than 768px */
 @media (max-width: 767px) {
     .quantityPicker {
         flex-direction: column;
@@ -35,6 +34,8 @@
 @media (min-width: 768px) and (max-width: 1023px) {
     .quantityPicker {
         /* Add styles for medium screens if needed */
+        font-size: 16px;
+        color:black;
     }
 }
 
@@ -42,5 +43,7 @@
 @media (min-width: 1024px) {
     .quantityPicker {
         /* Add styles for large screens if needed */
+        font-size: 18px;
+        color: black;
     }
 }

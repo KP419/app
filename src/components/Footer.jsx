@@ -8,11 +8,7 @@ function Footer() {
           <h3>Looney Farms</h3>
           <p>
             Looney Farms is a family-owned organic farm committed to sustainable
-            agriculture. We cultivate a wide variety of fruits and vegetables
-            using eco-friendly farming methods, ensuring our produce is bursting
-            with natural flavors and free from harmful chemicals. Experience the
-            taste of nature's bounty at its finest by visiting our farm stand or
-            joining our seasonal farm tours.
+            agriculture. You will love our products! follow us on all socials for more.
           </p>
         </div>
         <div className="footer-right">
@@ -21,16 +17,8 @@ function Footer() {
             <li>
               <a href="#">Home</a>
             </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Services</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
           </ul>
+            
         </div>
         <div className="footer-bottom">
           <p>

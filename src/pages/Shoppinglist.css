@@ -1,0 +1,77 @@
+/* Styles for ShoppingList component */
+.shopping-list-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.shopping-list-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+.shopping-list-input {
+    width: calc(100% - 100px);
+    padding: 12px;
+    margin-right: 20px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+.shopping-list-input:hover,
+.shopping-list-input:focus {
+    border-color: #007bff;
+}
+
+.shopping-list-button {
+    padding: 10px px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(76, 66, 47);
+    color: rgb(225, 236, 238);
+    border: none;
+    border-radius: 4px;
+}
+
+.shopping-list-button:hover {
+    background-color:green;
+}
+
+.shopping-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.shopping-list li {
+    margin-bottom: 10px;
+}
+
+.shopping-list-item {
+    display: flex;
+    align-items: center;
+}
+
+.shopping-list-item-text {
+    margin-right: 10px;
+}
+
+.shopping-list-remove-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.shopping-list-remove-button:hover {
+    background-color: #c82333;
+}
+
+/*Shoppinglist h1*/
+
