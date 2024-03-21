@@ -22,7 +22,7 @@ function Footer() {
         </div>
         <div className="footer-bottom">
           <p>
-            &copy; {new Date().getFullYear()} Looney Farms. All rights reserved.
+            &copy; {new Date().getFullYear()}   Looney Farms.
           </p>
         </div>
       </div>
