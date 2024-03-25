@@ -6,21 +6,31 @@ import Catalog from "./pages/Catalog";
 import QuantityPicker from "./components/QuantityPicker";
 import ShoppingList from "./pages/Shoppinglist";
 
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import About from "./pages/About";
+import Home from "./pages/Home";
+import Admin from "./pages/Admin";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
 
-      <Catalog />
-      <About/>
-      <ShoppingList />
-      <Footer />
-    </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/shoppinglist" element={<ShoppingList />} />
+          <Route path="/admin" element={<Admin />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 

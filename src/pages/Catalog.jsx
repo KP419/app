@@ -1,5 +1,6 @@
 import "./Catalog.css";
 import Product from "../components/Product";
+import Home from "./Home";
 
 function Catalog() {
   const data = [
