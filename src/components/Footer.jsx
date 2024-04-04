@@ -1,4 +1,5 @@
 import "./Footer.css";
+import Home from '../pages/Home';
 
 function Footer() {
   return (

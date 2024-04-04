@@ -41,8 +41,8 @@ function Cart() {
                             <p className="cart-item-total">
                                 Total: ${prod.price * prod.quantity}
                             </p>
-                        </div>
                         <button>Remove</button>
+                        </div>
                     </div>
                 ))}
                 <div className="cart-total-price">

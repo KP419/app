@@ -28,9 +28,10 @@
 }
 
 .cart-item-details {
+    flex: auto;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1rem;    
 }
 
 .cart-item-details img {
@@ -40,6 +41,7 @@
 
 .cart-item-title {
     margin: 0;
+    flex: 3;
 }
 
 .cart-item-price,
@@ -60,6 +62,7 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 90px;
 }
 
 .cart-item button:hover {
@@ -84,4 +87,9 @@
     font-size: 24px;
     font-weight: bold;
     color: #666;
+}
+
+/* cursor  */
+div {
+    cursor: pointer;
 }
