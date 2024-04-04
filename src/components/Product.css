@@ -46,6 +46,30 @@
     text-align: right;
 }
 
+.product {
+    /* ... existing styles ... */
+}
+
+.price-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+.price,
+.total {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.price {
+    color: green;
+}
+
+.total {
+    color: green;
+}
+
 /* Media queries */
 
 /* Smaller screens (up to 768px) */

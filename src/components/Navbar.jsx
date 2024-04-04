@@ -1,11 +1,26 @@
 import "./Navbar.css";
 
 import { Link } from "react-router-dom";
-import Catalog from '../pages/Catalog';
-import About from '../pages/About';
-import Admin from '../pages/Admin';
+import Catalog from "../pages/Catalog";
+import About from "../pages/About";
+import Admin from "../pages/Admin";
+import DataContext from "../context/dataContex";
+import { useContext } from "react";
+import Cart from '../pages/Cart';
 
 function Navbar() {
+  const cart = useContext(DataContext).cart;
+  console.log(cart);
+
+  function getNumProducts(){
+     let total = 0;
+     for (let i=0; i < cart.length; i++){
+      let prod = cart[i];
+      total += prod.quantity 
+     }
+
+     return total;
+  }
   return (
     <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid">
@@ -27,10 +42,13 @@ function Navbar() {
               <Link className="nav-link active" aria-current="page" to="/home">
                 Home
               </Link>
-            
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/catalog">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/catalog"
+              >
                 Catalog
               </Link>
             </li>
@@ -40,7 +58,11 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" to="/shoppingList">
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/shoppingList"
+              >
                 Shopping list
               </Link>
             </li>
@@ -50,17 +72,11 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <div className="d-flex" role="search">
+            <Link className="btn btn-outline-light" to="/cart">
+              {getNumProducts()} Cart 
+            </Link>
+          </div>
         </div>
       </div>
     </nav>
