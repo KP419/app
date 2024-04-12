@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Admin.css";
-import Cart from './Cart';
+import Cart from "./Cart";
+import DataService from "../services/dataService";
 
 function Admin() {
   const [coupon, setCoupon] = useState({
@@ -40,14 +41,18 @@ function Admin() {
     var copy = { ...product };
     copy[name] = val;
     setProduct(copy);
-    // console.log("Product State:", product); 
+    // console.log("Product State:", product);
   }
 
   function saveProduct() {
     console.log(product);
+    product.price = parseFloat(product.price);
     let copy = [...allProducts];
     copy.push(product);
     setAllProducts(copy);
+
+    let service = new DataService();
+    service.saveProduct(product);
   }
 
   return (
